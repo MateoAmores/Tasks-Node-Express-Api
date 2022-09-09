@@ -1,0 +1,30 @@
+@api = http://localhost:3000/tasks
+
+GET {{ api }}
+
+###
+GET {{ api }}/5
+
+###
+GET {{ api }}/count
+
+###
+POST {{ api }}
+Content-Type: application/json
+
+{
+    "title": "I have to create a React App",
+    "description": "I gotta practice my React skills"
+}
+
+###
+DELETE {{ api }}/2
+
+###
+PUT {{ api }}/5
+Content-Type: application/json
+
+{
+    "title": "study hard",
+    "description": "keep yourself motivated"
+}
